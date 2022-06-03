@@ -1,3 +1,95 @@
-// Place all the styles related to the houses controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.header {
+  height: 130px;
+  width: 100vw;
+  background-color: #e3f6f5;
+  border: 3px solid #272343;
+}
+
+.title-logo {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-logo a {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  text-decoration: none;
+  color: #272343;
+}
+
+.log-out {
+  margin-right: 50px;  
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.log-out a {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-size: 1.0rem;
+  text-decoration: none;
+  color: #272343;
+}
+
+
+
+
+
+.main {
+  background-color: #fffffe;
+  margin: 80px 400px;
+}
+
+.new-house {
+  margin: 0 auto;
+  height: 50px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd803;
+  border-radius: 5px;
+}
+
+.new-house a {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-size: 1.0rem;
+  text-decoration: none;
+  color: #272343;
+}
+
+
+
+.houses-list {
+  margin: 50px 0;
+  background-color: #e3f6f5;
+}
+
+.house-index {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-size: 1.0rem;
+  color: #272343;
+}
+
+.house {
+  display: flex;
+  justify-content: space-between;
+}
+
+.house-left {
+
+}
+
+.house-left-top {
+  display: flex;
+}
+
+.house-right {
+
+}
