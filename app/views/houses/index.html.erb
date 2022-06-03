@@ -1,0 +1,31 @@
+
+<div class="new-house">
+  <%= link_to 'Houseをつくる', new_house_path %>
+</div>
+
+<div class="houses-list">
+  <h2>House一覧</h2>
+  <% @houses.each do |house| %>
+    <div class="house">
+      <div class="house-name">
+        <td><%= link_to house.name, '#' %></td>
+      </div>
+      <div class="house-introduce">
+        <td><%= house.introduction %></td>
+      </div>
+      <div class="house-members">
+        <td><%= house.users.count %>人</td>
+      </div>
+      <div class="join-house">
+        <%= link_to '参加', house_join_path(house) %>
+      </div>
+      <div class="delete-house">
+        <%= link_to '退会', house_path(house), method: :delete %>
+      </div>
+      <div class="delete-house-all">
+        <%= link_to '削除', house_all_destroy_path(house), method: :delete %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
