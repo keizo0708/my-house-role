@@ -4,6 +4,9 @@ class HousesController < ApplicationController
 
   def index
     @houses = House.all
+    @users = User.all
+    @followings = current_user.followings
+    @followers = current_user.followers
   end
 
   def join

@@ -38,4 +38,46 @@
     <% end %>
   </div>
 
+  <div class="user-list">
+    <div class="following-index">User一覧</div><br/>
+    <% @users.each do |user| %>
+      <div class="user">
+        <div class="user-left">
+          <div class="following-nickname">
+            <%= link_to user.nickname, '#' %>
+          </div>
+        </div>
+        <div class="follow-right">
+          <%= render 'relationships/follow_button', user: user %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="followings-list">
+    <div class="following-index">Following一覧</div><br/>
+    <% @followings.each do |following| %>
+      <div class="following">
+        <div class="following-left">
+          <div class="following-nickname">
+            <%= link_to following.nickname, '#' %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="followers-list">
+    <div class="followers-index">Follower一覧</div><br/>
+    <% @followers.each do |follower| %>
+      <div class="following">
+        <div class="following-left">
+          <div class="following-nickname">
+            <%= link_to follower.nickname, '#' %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
 </div>
