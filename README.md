@@ -15,6 +15,16 @@
 
 
 
+## Relationships テーブル
+| Column | Type       | Options                           |
+| ------ | ---------- | --------------------------------- |
+| user   | references | foreign_key: true                 |
+| follow | references | foreign_key: { to_table: :users } |
+
+### Association
+
+
+
 ## Houses テーブル
 | Column       | Type    | Options     |
 | ------------ | ------- | ------------|
